@@ -10,26 +10,7 @@ const HeroSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* Left Content - Profile Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end"
-          >
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full border-2 border-gray-200 overflow-hidden bg-white shadow-sm">
-              <Image
-                src="/00-gold-towa.png"
-                alt="林のプロフィール画像"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 320px, 384px"
-                priority
-              />
-            </div>
-          </motion.div>
-
-          {/* Right Content */}
+          {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -86,6 +67,25 @@ const HeroSection = () => {
                 お問い合わせ
               </Link>
             </motion.div>
+          </motion.div>
+
+          {/* Right Content - Profile Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex justify-center lg:justify-end"
+          >
+            <div className="mt-4 relative w-80 h-80 lg:w-96 lg:h-96 rounded-full border-2 border-gray-200 overflow-hidden bg-white shadow-sm">
+              <Image
+                src="/00-gold-towa.png"
+                alt="林のプロフィール画像"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 320px, 384px"
+                priority
+              />
+            </div>
           </motion.div>
 
         </div>
