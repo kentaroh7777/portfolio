@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mcp-email-server__list_accounts",
+      "mcp__mcp-email-server__list_emails",
+      "mcp__mcp-todoist__todoist_get_tasks",
+      "mcp__google-calendar__list_calendars",
+      "mcp__google-calendar__list_calendar_events",
+      "mcp__playwright-official__browser_navigate",
+      "mcp__playwright-official__browser_close",
+      "WebFetch(domain:x.com)",
+      "mcp__playwright-official__browser_snapshot",
+      "mcp__playwright-official__browser_take_screenshot",
+      "Bash(npx create-next-app:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)",
+      "Bash(npm run build:*)",
+      "Bash(PORT=3002 npm run dev)",
+      "Bash(chmod:*)",
+      "Bash(./scripts/server.sh:*)",
+      "mcp__playwright-official__browser_evaluate",
+      "mcp__mcp-figma__get_figma_data",
+      "mcp__playwright-official__browser_click",
+      "WebFetch(domain:h-fpo.com)",
+      "Bash(find:*)",
+      "Bash(timeout:*)"
+    ],
+    "deny": []
+  }
+}
