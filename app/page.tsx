@@ -182,7 +182,7 @@ export default function Home() {
           >
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">プロジェクトのご相談</h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Web3、AIを活用した開発やシステム構築のご相談を承っています
+              Web3、AIを活用した開発やwebシステム構築のご相談を承っています
             </p>
             <Link 
               href="/contact" 
