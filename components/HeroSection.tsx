@@ -17,12 +17,12 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full border-2 border-gray-200 overflow-hidden bg-white shadow-sm">
               <Image
                 src="/00-gold-towa.png"
                 alt="林のプロフィール画像"
                 fill
-                className="object-cover rounded-2xl"
+                className="object-cover"
                 sizes="(max-width: 1024px) 320px, 384px"
                 priority
               />
