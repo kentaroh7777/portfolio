@@ -63,7 +63,7 @@ const HeroSection = () => {
             >
               <p className="text-gray-700">1999-2014年 大手メーカー会社員にて研究、エンジニア</p>
               <p className="text-gray-700">2015-2024年 フリーランスFP</p>
-              <p className="text-gray-700">2024年 AIの可能性を感じ、AIエンジニアへリスキリング</p>
+              <p className="text-gray-700">2024年 AIの可能性を感じ、AIエンジニアへリスキリング。総エンジニア歴15年以上</p>
               <p className="font-semibold text-gray-900">2025年 クライアントワーク開始、おかげさまで継続契約中</p>
             </motion.div>
 

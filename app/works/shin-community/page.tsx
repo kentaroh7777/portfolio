@@ -313,7 +313,7 @@ export default function ShinCommunityPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section
       <section className="py-20 bg-black text-white">
         <div className="container-custom">
           <motion.div
@@ -340,7 +340,7 @@ export default function ShinCommunityPage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

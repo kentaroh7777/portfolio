@@ -38,12 +38,90 @@ const works = [
     tags: ["Chrome Extension", "AI", "JavaScript"],
     link: "/works/ai-reply-assistant",
   },
+  {
+    id: "mcp-todoist",
+    title: "MCP Todoist サーバー",
+    description: "標準入出力(stdio)型のMCPサーバー。Convexを用いたセッション管理と多数のTodoistツールを実装。WebUIでのテスト環境も整備。",
+    image: "/mcp-todoist-banner.png",
+    tags: ["MCP", "TypeScript", "Convex", "Todoist"],
+    link: "/works/mcp-todoist",
+  },
+  {
+    id: "mcp-email-server",
+    title: "MCP Email サーバー",
+    description: "ストリーミングHTTP型MCPサーバー。Gmail/IMAP連携、送信・アーカイブなどのツールを提供し、全テスト合格の堅牢な実装。",
+    image: "/mcp-email-banner2.png",
+    tags: ["MCP", "TypeScript", "Streaming HTTP", "Gmail", "IMAP"],
+    link: "/works/mcp-email-server",
+  },
 ];
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
+
+      {/* Project Videos Section */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">プロジェクト動画</h2>
+            <p className="text-lg text-gray-600">記事内のデモ動画をピックアップ</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-gray-50 p-4 rounded-xl shadow-sm"
+            >
+              <div className="aspect-video rounded-lg overflow-hidden bg-black mb-3">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/eQig2LT7heo"
+                  title="CNPトレカアプリ開発デモ動画"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="text-sm text-gray-700 font-medium">CNPトレカアプリ開発 デモ</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-gray-50 p-4 rounded-xl shadow-sm"
+            >
+              <div className="aspect-video rounded-lg overflow-hidden bg-black mb-3">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/UkSqxUgGLQY"
+                  title="AI Reply Assistant Chrome拡張デモ動画"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="text-sm text-gray-700 font-medium">AI Reply Assistant Chrome拡張 デモ</div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* Works Section */}
       <section className="py-20 bg-gray-50" id="works">

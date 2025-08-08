@@ -54,13 +54,46 @@ const allWorks = [
     githubLink: "https://github.com/kentaroh7777/ax-camp-test",
     category: "Chrome拡張・AI開発"
   }
+  ,
+  {
+    id: "mcp-todoist",
+    title: "MCP Todoist サーバー",
+    description: "標準入出力(stdio)型のMCPサーバー。Convexベースでセッション管理・リアルタイム・ツール実行を統合。TDDで多数テストを整備。",
+    image: "/mcp-todoist-banner.png",
+    period: "2025年1月-6月",
+    stats: {
+      tests: "100+",
+      features: "ツール/リソース/ログ",
+      ui: "WebUI MCPテスター"
+    },
+    tags: ["MCP", "TypeScript", "Convex", "WebSocket", "Firebase Auth"],
+    link: "/works/mcp-todoist",
+    githubLink: "https://github.com/taroken7777/mcp-todoist",
+    category: "AI基盤・MCPサーバー"
+  },
+  {
+    id: "mcp-email-server",
+    title: "MCP Email サーバー",
+    description: "ストリーミングHTTP型のMCPサーバー。Gmail/IMAP統合、送信・検索・アーカイブなどのツールを提供し、全テスト合格。",
+    image: "/mcp-email-banner2.png",
+    period: "2025年6月",
+    stats: {
+      tests: "100% pass",
+      protocol: "Streaming HTTP",
+      services: "Gmail/IMAP"
+    },
+    tags: ["MCP", "TypeScript", "Streaming", "Gmail", "IMAP"],
+    link: "/works/mcp-email-server",
+    githubLink: "https://github.com/taroken7777/mcp-email-server",
+    category: "AI基盤・MCPサーバー"
+  }
 ];
 
 const categories = [
   "全て",
-  "Web開発・ゲーム開発", 
-  "Chrome拡張・AI開発",
-  "出版・コンテンツ制作"
+  "Web開発(F/B)・ゲーム開発", 
+  "Chrome拡張・AIツール開発",
+  "AIアシスト効率化基盤・MCPサーバー"
 ];
 
 export default function WorksPage() {
@@ -241,7 +274,7 @@ export default function WorksPage() {
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
               <h3 className="text-xl font-bold text-gray-900 mb-2">Web開発</h3>
-              <p className="text-gray-600 text-sm">Next.js, React, TypeScript</p>
+              <p className="text-gray-600 text-sm">Next.js, React, TypeScript等</p>
             </motion.div>
             
             <motion.div
@@ -252,7 +285,7 @@ export default function WorksPage() {
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
               <h3 className="text-xl font-bold text-gray-900 mb-2">AI開発</h3>
-              <p className="text-gray-600 text-sm">LLM統合, 自動化ツール</p>
+              <p className="text-gray-600 text-sm">LLM統合, AI自動化ツール, AIデータ分析等</p>
             </motion.div>
             
             <motion.div
@@ -263,19 +296,9 @@ export default function WorksPage() {
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
               <h3 className="text-xl font-bold text-gray-900 mb-2">ゲーム開発</h3>
-              <p className="text-gray-600 text-sm">リアルタイム通信, WebSocket</p>
+              <p className="text-gray-600 text-sm">リアルタイム通信, WebSocket等</p>
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white p-6 rounded-xl shadow-lg text-center"
-            >
-              <h3 className="text-xl font-bold text-gray-900 mb-2">コンテンツ制作</h3>
-              <p className="text-gray-600 text-sm">執筆, マーケティング支援</p>
-            </motion.div>
           </div>
         </div>
       </section>
