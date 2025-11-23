@@ -86,12 +86,28 @@ const allWorks = [
     link: "/works/mcp-email-server",
     githubLink: "https://github.com/taroken7777/mcp-email-server",
     category: "AI基盤・MCPサーバー"
+  },
+  {
+    id: "jpyc-payment",
+    title: "JPYC決済アプリ導入実験",
+    description: "KryptoKyoto様と共同で実施したJPYC決済導入実験。店舗スタッフもお客様も迷わずに操作できる専用決済アプリを開発し、スムーズな暗号資産決済を実現。",
+    image: "/jpyc-payment-banner.png",
+    period: "2025年11月〜",
+    stats: {
+      role: "アプリ開発",
+      tech: "Vite/Convex",
+      status: "実験中"
+    },
+    tags: ["Vite", "TypeScript", "Web3", "JPYC", "Convex"],
+    link: "/works/jpyc-payment",
+    demoLink: "https://note.com/kenhfp/n/n50fe0965018c",
+    category: "Web開発・Web3"
   }
 ];
 
 const categories = [
   "全て",
-  "Web開発(F/B)・ゲーム開発", 
+  "Web開発(F/B)・ゲーム開発",
   "Chrome拡張・AIツール開発",
   "AIアシスト効率化基盤・MCPサーバー"
 ];
@@ -102,8 +118,8 @@ export default function WorksPage() {
       {/* Header */}
       <div className="bg-black text-white py-4">
         <div className="container-custom">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="inline-flex items-center text-gray-300 hover:text-white transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -178,7 +194,7 @@ export default function WorksPage() {
                     <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                       {work.title}
                     </h2>
-                    
+
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       {work.description}
                     </p>
@@ -214,7 +230,7 @@ export default function WorksPage() {
                       >
                         詳細を見る
                       </Link>
-                      
+
                       {work.demoLink && (
                         <Link
                           href={work.demoLink}
@@ -226,7 +242,7 @@ export default function WorksPage() {
                           <ExternalLink className="ml-2 h-4 w-4" />
                         </Link>
                       )}
-                      
+
                       {work.githubLink && (
                         <Link
                           href={work.githubLink}
@@ -276,7 +292,7 @@ export default function WorksPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Web開発</h3>
               <p className="text-gray-600 text-sm">Next.js, React, TypeScript等</p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -287,7 +303,7 @@ export default function WorksPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">AI開発</h3>
               <p className="text-gray-600 text-sm">LLM統合, AI自動化ツール, AIデータ分析等</p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -298,7 +314,7 @@ export default function WorksPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">ゲーム開発</h3>
               <p className="text-gray-600 text-sm">リアルタイム通信, WebSocket等</p>
             </motion.div>
-            
+
           </div>
         </div>
       </section>
@@ -320,8 +336,8 @@ export default function WorksPage() {
               Web3、AI、ゲーム開発、コンテンツ制作まで、
               幅広い分野でのご相談を承っています
             </p>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
             >
               お問い合わせはこちら

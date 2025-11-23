@@ -54,6 +54,14 @@ const works = [
     tags: ["MCP", "TypeScript", "Streaming HTTP", "Gmail", "IMAP"],
     link: "/works/mcp-email-server",
   },
+  {
+    id: "jpyc-payment",
+    title: "JPYC決済アプリ導入実験",
+    description: "KryptoKyoto様と共同で実施したJPYC決済導入実験。店舗用決済アプリを開発し、スムーズな暗号資産決済を実現。",
+    image: "/jpyc-payment-banner.png",
+    tags: ["Vite", "TypeScript", "Web3", "JPYC", "Convex"],
+    link: "/works/jpyc-payment",
+  },
 ];
 
 export default function Home() {
@@ -158,8 +166,8 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center mt-16"
           >
-            <Link 
-              href="/works" 
+            <Link
+              href="/works"
               className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all duration-300"
             >
               すべての実績を見る
@@ -184,8 +192,8 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Web3、AIを活用した開発やwebシステム構築のご相談を承っています
             </p>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
             >
               お問い合わせはこちら
