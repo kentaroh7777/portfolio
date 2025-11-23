@@ -56,7 +56,7 @@ const works = [
   },
   {
     id: "jpyc-payment",
-    title: "JPYC決済アプリ導入実験",
+    title: "JPYC決済アプリ導入実験成功",
     description: "KryptoKyoto様と共同で実施したJPYC決済導入実験。店舗用決済アプリを開発し、スムーズな暗号資産決済を実現。",
     image: "/jpyc-payment-banner.png",
     tags: ["Vite", "TypeScript", "Web3", "JPYC", "Convex"],

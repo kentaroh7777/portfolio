@@ -66,7 +66,7 @@ export default function JpycPaymentPage() {
             className="text-center"
           >
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              JPYC決済アプリ導入実験
+              JPYC決済アプリ導入実験成功
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               KryptoKyoto様と共同で実施した、日本円ステーブルコイン「JPYC」を用いた店舗決済の導入実験。

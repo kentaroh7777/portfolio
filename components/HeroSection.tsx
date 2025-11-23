@@ -45,7 +45,8 @@ const HeroSection = () => {
               <p className="text-gray-700">1999-2014年 大手メーカー会社員にて研究、エンジニア</p>
               <p className="text-gray-700">2015-2024年 フリーランスFP</p>
               <p className="text-gray-700">2024年 AIの可能性を感じ、AIエンジニアへリスキリング。総エンジニア歴15年以上</p>
-              <p className="font-semibold text-gray-900">2025年 クライアントワーク開始、おかげさまで継続契約中</p>
+              <p className="font-semibold text-gray-900">2025年 クライアントワーク開始、継続契約中</p>
+              <p className="text-gray-700">2025年10月 1社技術顧問就任</p>
             </motion.div>
 
             <motion.div
@@ -54,14 +55,14 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link 
-                href="/works" 
+              <Link
+                href="/works"
                 className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all duration-300"
               >
                 実績を見る
               </Link>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold text-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-300"
               >
                 お問い合わせ

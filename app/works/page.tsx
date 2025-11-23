@@ -89,8 +89,8 @@ const allWorks = [
   },
   {
     id: "jpyc-payment",
-    title: "JPYC決済アプリ導入実験",
-    description: "KryptoKyoto様と共同で実施したJPYC決済導入実験。店舗スタッフもお客様も迷わずに操作できる専用決済アプリを開発し、スムーズな暗号資産決済を実現。",
+    title: "JPYC決済アプリ導入実験成功",
+    description: "KryptoKyoto様と共同で実施したJPYC決済導入実験に成功しました。店舗スタッフもお客様も迷わずに操作できる専用決済アプリを開発し、スムーズな暗号資産決済を実現。",
     image: "/jpyc-payment-banner.png",
     period: "2025年11月〜",
     stats: {
