@@ -34,7 +34,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${inter.variable} ${notoSansJP.variable}`}>
+    <html
+      lang="ja"
+      className={`${inter.variable} ${notoSansJP.variable}`}
+      suppressHydrationWarning
+    >
       <body className="font-sans min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
