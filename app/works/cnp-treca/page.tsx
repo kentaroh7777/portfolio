@@ -101,7 +101,7 @@ export default function CNPTrecaPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-300"
             >
-              デモサイトを見る
+              アプリをプレイする
               <ExternalLink className="ml-2 h-5 w-5" />
             </Link>
           </motion.div>
