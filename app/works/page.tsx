@@ -10,7 +10,7 @@ const allWorks = [
     id: "cnp-treca",
     title: "CNPトレカアプリ開発",
     description: "初心者でも気軽にCNPトレカを楽しめるWebアプリ。ネットワーク対戦とCPU対戦機能を実装。リアルカードゲームのオンライン化の可能性を検証した本格的なゲームアプリケーション。",
-    image: "/cnp-traca-banner.jpeg",
+    image: "/cnp-tcg-banner.png",
     period: "2024年9月〜2025年5月",
     stats: {
       development: "10人月",

@@ -3,3 +3,7 @@ node_modules/
 dist/
 scripts/server.pid
 scripts/server.log
+.env
+
+*.code-workspace
+

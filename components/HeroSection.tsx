@@ -47,6 +47,12 @@ const HeroSection = () => {
               <p className="text-gray-700">2024年 AIの可能性を感じ、AIエンジニアへリスキリング。総エンジニア歴15年以上</p>
               <p className="font-semibold text-gray-900">2025年 クライアントワーク開始、継続契約中</p>
               <p className="text-gray-700">2025年10月 1社技術顧問就任</p>
+              <p className="text-gray-700">
+                2025年12月 CNPトレカアプリ α版を公開・
+                <a href="/works/cnp-treca" className="font-bold text-red-500 underline hover:text-red-600 transition">
+                  スポンサー獲得
+                </a>
+              </p>
             </motion.div>
 
             <motion.div

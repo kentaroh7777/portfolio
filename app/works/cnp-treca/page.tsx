@@ -6,6 +6,14 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Globe, Clock, Code, Users } from "lucide-react";
 
 export default function CNPTrecaPage() {
+  const latestTopic = {
+    dateLabel: "2025/12/27",
+    title: "CNPトレカアプリ α版を公開しました（スポンサー獲得）",
+    summary:
+      "α版を公開し、フィードバックを受けながら改善を回せる「触って遊べる」状態になりました。スポンサー獲得、Discordログイン対応、ボイスチャット(VC)、カードビューアも実装しています。",
+    noteUrl: "https://note.com/kenhfp/n/nd7e4562ad852",
+  };
+
   const projectStats = [
     { label: "開発期間", value: "6ヶ月", icon: Clock },
     { label: "実質開発工数", value: "10人月", icon: Users },
@@ -108,6 +116,7 @@ export default function CNPTrecaPage() {
         </div>
       </section>
 
+
       {/* Project Image */}
       <section className="py-16">
         <div className="container-custom">
@@ -119,12 +128,51 @@ export default function CNPTrecaPage() {
             className="relative overflow-hidden rounded-2xl shadow-2xl"
           >
             <Image
-              src="/cnp-traca-banner.jpeg"
+              src="/cnp-tcg-banner.png"
               alt="CNPトレカアプリのスクリーンショット"
               width={1200}
               height={600}
               className="w-full h-auto"
             />
+          </motion.div>
+        </div>
+      </section>
+      
+      {/* Latest Topic */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 shadow-lg"
+          >
+            <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+              <div className="max-w-3xl">
+                <div className="text-sm font-semibold text-blue-600 mb-2">
+                  最新トピック（{latestTopic.dateLabel}）
+                </div>
+                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
+                  {latestTopic.title}
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  {latestTopic.summary}
+                </p>
+              </div>
+
+              <div className="flex-shrink-0">
+                <Link
+                  href={latestTopic.noteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold shadow-sm border border-gray-200 hover:bg-gray-50 transition-all duration-300"
+                >
+                  noteで記事を読む
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
