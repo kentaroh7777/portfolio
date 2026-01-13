@@ -22,6 +22,15 @@ const works = [
     link: "/works/cnp-treca",
   },
   {
+    id: "card-search",
+    title: "AI駆動 爆速開発手法（card-search）",
+    description:
+      "類似カード検索CLIと実装パターンのメタタグDBで、AIエージェントの認知負荷を下げて設計・実装の手戻りを削減。",
+    image: "/card-search.png",
+    tags: ["AI開発", "開発ツール", "検索", "設計支援"],
+    link: "/works/card-search",
+  },
+  {
     id: "shin-community",
     title: "シン・コミュニティマーケティング",
     description: "Web3時代のコミュニティマーケティングについての商業出版。新しいマーケティング手法を提案。",
@@ -83,7 +92,7 @@ export default function Home() {
             <p className="text-lg text-gray-600">記事内のデモ動画をピックアップ</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -126,6 +135,30 @@ export default function Home() {
                 ></iframe>
               </div>
               <div className="text-sm text-gray-700 font-medium">AI Reply Assistant Chrome拡張 デモ</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-gray-50 p-4 rounded-xl shadow-sm"
+            >
+              <div className="aspect-video rounded-lg overflow-hidden bg-black mb-3">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube-nocookie.com/embed/BLRgHETopOg?rel=0"
+                  title="AI駆動 爆速開発手法（card-search / メタタグDB）デモ動画"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="text-sm text-gray-700 font-medium">
+                AI駆動 爆速開発手法（card-search / メタタグDB）デモ
+              </div>
             </motion.div>
           </div>
         </div>

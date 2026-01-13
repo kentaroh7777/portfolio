@@ -23,6 +23,22 @@ const allWorks = [
     category: "Web開発・ゲーム開発"
   },
   {
+    id: "card-search",
+    title: "AI駆動 爆速開発手法（card-search / メタタグDB）",
+    description:
+      "CNPトレカの「カード効果ロジック」を高速・高品質に実装するための開発手法。類似カード検索CLI（card-search）と実装パターンのメタタグDBで、AIエージェントの認知負荷を下げて設計・実装を加速。",
+    image: "/card-search.png",
+    period: "2026年1月",
+    stats: {
+      approach: "card-search + メタタグDB",
+      goal: "認知負荷の削減",
+      outcome: "手戻りを低減"
+    },
+    tags: ["AI駆動開発", "開発ツール", "TypeScript", "設計支援"],
+    link: "/works/card-search",
+    category: "AI開発手法・開発ツール"
+  },
+  {
     id: "shin-community",
     title: "シン・コミュニティマーケティング",
     description: "Web3時代のコミュニティを活用したマーケティングの仕組みと事例を解説した商業出版。企業のマーケティング担当者向けに実践的なノウハウを提供し、3.5日で3,000部完売の好評を博した。",

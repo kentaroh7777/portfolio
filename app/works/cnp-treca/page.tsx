@@ -105,7 +105,7 @@ export default function CNPTrecaPage() {
             </div>
             <Link
               href="https://tcg.kenty.app"
-              target="_blank"
+              target="CNPTCGapp"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-300"
             >

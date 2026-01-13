@@ -53,6 +53,11 @@ const HeroSection = () => {
                   スポンサー獲得
                 </a>
               </p>
+              <p className="text-gray-700">2026年1月 
+                <a href="/works/card-search">
+                  AI応用で爆速開発手法を開発
+                </a>
+              </p>
             </motion.div>
 
             <motion.div
