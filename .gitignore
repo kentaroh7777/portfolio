@@ -7,3 +7,7 @@ scripts/server.log
 
 *.code-workspace
 
+
+# 生成素材の原本（キー色背景・不採用分を含む）。サイトは public/ のWebPだけを配信する
+assets-src/
+tsconfig.tsbuildinfo

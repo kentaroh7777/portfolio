@@ -6,9 +6,9 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply text-gray-900 bg-white;
+    @apply text-ink bg-white antialiased;
   }
 }
 
@@ -16,20 +16,58 @@
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
+  /* 白地に淡いドット。セクションの地に使う */
+  .bg-dots {
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(30, 35, 70, 0.07) 1.2px, transparent 1.2px);
+    background-size: 22px 22px;
+  }
+
+  .bg-cream-dots {
+    background-color: #fff8ef;
+    background-image: radial-gradient(rgba(255, 138, 61, 0.14) 1.2px, transparent 1.2px);
+    background-size: 22px 22px;
+  }
+
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary via-blue-500 to-secondary;
+    @apply bg-gradient-to-br from-sun via-sakura to-sky;
   }
-  
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-sun via-sakura to-sky bg-clip-text text-transparent;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-bold tracking-wider text-sun shadow-soft ring-1 ring-orange-100;
+  }
+
+  .section-title {
+    @apply font-round text-3xl font-extrabold text-ink sm:text-4xl lg:text-5xl;
+  }
+
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-pop;
   }
-  
+
   .btn-primary {
-    @apply px-6 py-3 bg-primary text-white rounded-lg font-semibold transition-all duration-300 hover:bg-blue-700 hover:shadow-lg;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-sun px-7 py-3.5 font-bold text-white shadow-[0_5px_0_0_#d9661c] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ff7a22] active:translate-y-0.5 active:shadow-[0_2px_0_0_#d9661c];
   }
-  
+
   .btn-secondary {
-    @apply px-6 py-3 bg-secondary text-white rounded-lg font-semibold transition-all duration-300 hover:bg-green-600 hover:shadow-lg;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-ink ring-2 ring-ink/10 transition-all duration-200 hover:-translate-y-0.5 hover:ring-sun hover:text-sun;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-3.5 font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#2c335f];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

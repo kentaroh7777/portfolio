@@ -77,11 +77,11 @@ export default function AIReplyAssistantPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-black text-white py-4">
+      <div className="bg-cream border-b border-orange-100 py-4">
         <div className="container-custom">
           <Link 
             href="/" 
-            className="inline-flex items-center text-gray-300 hover:text-white transition-colors"
+            className="inline-flex items-center text-ink/70 hover:text-sun transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             ホームに戻る
@@ -226,7 +226,7 @@ export default function AIReplyAssistantPage() {
                 href="https://github.com/kentaroh7777/ax-camp-test"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300"
+                className="inline-flex items-center justify-center w-full px-6 py-3 bg-sun text-white rounded-lg font-semibold hover:bg-[#ff7a22] transition-all duration-300"
               >
                 GitHubでコードを確認
                 <ExternalLink className="ml-2 h-4 w-4" />
@@ -442,7 +442,7 @@ export default function AIReplyAssistantPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 text-ink">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -454,7 +454,7 @@ export default function AIReplyAssistantPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               各種AIツール開発
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-ink/70 mb-8 max-w-2xl mx-auto">
               業務効率化、AI統合、複雑な技術要件のあるChrome拡張機能を含む、
               各種AIツールの開発をお任せください
             </p>
@@ -463,14 +463,14 @@ export default function AIReplyAssistantPage() {
                 href="https://github.com/kentaroh7777/ax-camp-test"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300"
+                className="btn-secondary text-lg"
               >
                 ソースコードを見る
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
+                className="btn-primary text-lg"
               >
                 開発を相談する
               </Link>

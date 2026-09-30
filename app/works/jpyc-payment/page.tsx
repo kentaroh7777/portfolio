@@ -44,11 +44,11 @@ export default function JpycPaymentPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-black text-white py-4">
+      <div className="bg-cream border-b border-orange-100 py-4">
         <div className="container-custom">
           <Link
             href="/"
-            className="inline-flex items-center text-gray-300 hover:text-white transition-colors"
+            className="inline-flex items-center text-ink/70 hover:text-sun transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             ホームに戻る
@@ -220,7 +220,7 @@ export default function JpycPaymentPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 text-ink">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -232,7 +232,7 @@ export default function JpycPaymentPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Web3決済の導入をご検討ですか？
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-ink/70 mb-8 max-w-2xl mx-auto">
               店舗やECサイトへの暗号資産決済導入、
               ブロックチェーンを活用したシステム開発のご相談を承ります
             </p>
@@ -241,14 +241,14 @@ export default function JpycPaymentPage() {
                 href="https://note.com/kenhfp/n/n50fe0965018c"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300"
+                className="btn-secondary text-lg"
               >
                 詳細記事を読む
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
+                className="btn-primary text-lg"
               >
                 お問い合わせはこちら
               </Link>

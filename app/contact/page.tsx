@@ -73,11 +73,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-black text-white py-4">
+      <div className="bg-cream border-b border-orange-100 py-4">
         <div className="container-custom">
           <Link 
             href="/" 
-            className="inline-flex items-center text-gray-300 hover:text-white transition-colors"
+            className="inline-flex items-center text-ink/70 hover:text-sun transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             ホームに戻る
@@ -285,7 +285,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 text-ink">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -297,14 +297,14 @@ export default function ContactPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               まずはお気軽にご相談ください
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-ink/70 mb-8 max-w-2xl mx-auto">
               プロジェクトの規模や期間に関わらず、
               どのようなご相談でも歓迎いたします
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:info@h-fpo.com"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
+                className="btn-primary text-lg"
               >
                 <Mail className="mr-2 h-5 w-5" />
                 メールで相談する
@@ -313,7 +313,7 @@ export default function ContactPage() {
                 href="https://x.com/kabuco_h"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300"
+                className="btn-secondary text-lg"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 X (Twitter) で相談する

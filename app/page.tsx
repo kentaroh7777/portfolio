@@ -1,11 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import HeroSection from "@/components/HeroSection";
 import WorkCard from "@/components/WorkCard";
 import SkillSection from "@/components/SkillSection";
+import ServiceShowcase from "@/components/ServiceShowcase";
+import VideoGallery from "@/components/VideoGallery";
+import ChibiMarquee from "@/components/ChibiMarquee";
+import Chibi from "@/components/Chibi";
 
 const works = [
   {
@@ -77,160 +80,81 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-
-      {/* Project Videos Section */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-10"
-          >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">プロジェクト動画</h2>
-            <p className="text-lg text-gray-600">記事内のデモ動画をピックアップ</p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-gray-50 p-4 rounded-xl shadow-sm"
-            >
-              <div className="aspect-video rounded-lg overflow-hidden bg-black mb-3">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/eQig2LT7heo"
-                  title="CNPトレカアプリ開発デモ動画"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-              <div className="text-sm text-gray-700 font-medium">CNPトレカアプリ開発 デモ</div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-gray-50 p-4 rounded-xl shadow-sm"
-            >
-              <div className="aspect-video rounded-lg overflow-hidden bg-black mb-3">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/UkSqxUgGLQY"
-                  title="AI Reply Assistant Chrome拡張デモ動画"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-              <div className="text-sm text-gray-700 font-medium">AI Reply Assistant Chrome拡張 デモ</div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-gray-50 p-4 rounded-xl shadow-sm"
-            >
-              <div className="aspect-video rounded-lg overflow-hidden bg-black mb-3">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube-nocookie.com/embed/BLRgHETopOg?rel=0"
-                  title="AI駆動 爆速開発手法（card-search / メタタグDB）デモ動画"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-              <div className="text-sm text-gray-700 font-medium">
-                AI駆動 爆速開発手法（card-search / メタタグDB）デモ
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <ChibiMarquee />
+      <ServiceShowcase />
+      <VideoGallery />
 
       {/* Works Section */}
-      <section className="py-20 bg-gray-50" id="works">
+      <section className="relative scroll-mt-20 bg-dots py-20 lg:py-28" id="works">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="relative mb-16 text-center"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Selected projects</h2>
-            <p className="text-lg text-gray-600">クライアントワークと個人開発の実績</p>
+            <span className="section-label">WORKS</span>
+            <h2 className="section-title mt-4">開発・出版の実績</h2>
+            <p className="mt-4 text-lg text-ink/60">クライアントワークと個人開発の実績</p>
+            <Chibi pose="point" height={170} motion="flutter" bubble="こっちも見てね" bubbleSide="right" className="absolute -top-8 left-0 hidden lg:block" />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {works.map((work, index) => (
               <motion.div
                 key={work.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
               >
                 <WorkCard {...work} />
               </motion.div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-center mt-16"
-          >
-            <Link
-              href="/works"
-              className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all duration-300"
-            >
+          <div className="mt-14 text-center">
+            <Link href="/works" className="btn-dark text-lg">
               すべての実績を見る
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       <SkillSection />
 
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="relative overflow-hidden bg-white py-20 lg:py-28">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center"
+            className="relative overflow-hidden rounded-[40px] bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 px-6 py-16 text-center ring-1 ring-ink/5 lg:px-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6">プロジェクトのご相談</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Web3、AIを活用した開発やwebシステム構築のご相談を承っています
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
-            >
-              お問い合わせはこちら
-            </Link>
+            <div className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-orange-200/60 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-10 -right-10 h-56 w-56 rounded-full bg-sky-200/60 blur-3xl" />
+            <div className="relative">
+              <h2 className="section-title">プロジェクトのご相談</h2>
+              <p className="mx-auto mt-5 max-w-2xl text-lg text-ink/70">
+                アニメ・動画、3Dモデルの制作から、Web3・AIを活用した開発やWebシステム構築まで。予算や納期が決まっていなくても、お気軽にご相談ください。
+              </p>
+              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <Link href="/contact" className="btn-primary text-lg">
+                  お問い合わせはこちら
+                </Link>
+                <Link href="#services" className="btn-secondary text-lg">
+                  制作サービスを見る
+                </Link>
+              </div>
+            </div>
+            <div className="relative mt-10 flex items-end justify-center gap-2 sm:gap-6">
+              <Chibi pose="present" height={130} motion="bob" delay={0} />
+              <Chibi pose="letter" height={170} motion="flutter" delay={0.4} bubble="お便り待ってます！" />
+              <Chibi pose="kachi" height={130} motion="bob" delay={0.8} />
+            </div>
           </motion.div>
         </div>
       </section>

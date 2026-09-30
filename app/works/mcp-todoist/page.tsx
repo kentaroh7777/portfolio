@@ -43,9 +43,9 @@ export default function MCPTodoistPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-black text-white py-4">
+      <div className="bg-cream border-b border-orange-100 py-4">
         <div className="container-custom">
-          <Link href="/" className="inline-flex items-center text-gray-300 hover:text-white transition-colors">
+          <Link href="/" className="inline-flex items-center text-ink/70 hover:text-sun transition-colors">
             <ArrowLeft className="mr-2 h-4 w-4" />
             ホームに戻る
           </Link>
@@ -128,17 +128,17 @@ export default function MCPTodoistPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 text-ink">
         <div className="container-custom">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">MCP連携・業務自動化のご相談</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">MCPサーバー構築、既存サービス連携、UIテスター実装まで支援します</p>
+            <p className="text-xl text-ink/70 mb-8 max-w-2xl mx-auto">MCPサーバー構築、既存サービス連携、UIテスター実装まで支援します</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="https://github.com/taroken7777/mcp-todoist" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300">
+              <Link href="https://github.com/taroken7777/mcp-todoist" target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg">
                 ソースコードを見る
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Link>
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300">
+              <Link href="/contact" className="btn-primary text-lg">
                 開発を相談する
               </Link>
             </div>

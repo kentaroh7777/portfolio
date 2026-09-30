@@ -15,11 +15,11 @@ const VIDEO_EMBED_URL = "https://www.youtube-nocookie.com/embed/BLRgHETopOg?rel=
 export default function CardSearchArticlePage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-black text-white py-4">
+      <div className="bg-cream border-b border-orange-100 py-4">
         <div className="container-custom">
           <Link
             href="/"
-            className="inline-flex items-center text-gray-300 hover:text-white transition-colors"
+            className="inline-flex items-center text-ink/70 hover:text-sun transition-colors"
           >
             ← ホームに戻る
           </Link>
@@ -52,7 +52,7 @@ export default function CardSearchArticlePage() {
                   href={NOTE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-sun text-white rounded-lg font-semibold hover:bg-[#ff7a22] transition-all duration-300"
                 >
                   noteで記事を読む
                 </a>
@@ -104,7 +104,7 @@ export default function CardSearchArticlePage() {
                   href={NOTE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-sun text-white rounded-lg font-semibold hover:bg-[#ff7a22] transition-all duration-300"
                 >
                   記事で詳細を見る
                 </a>
@@ -179,9 +179,9 @@ export default function CardSearchArticlePage() {
         <section className="py-16">
           <div className="container-custom">
             <div className="max-w-5xl mx-auto">
-              <div className="bg-gradient-to-br from-gray-900 to-black text-white rounded-2xl p-10">
+              <div className="bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 text-ink ring-1 ring-ink/5 rounded-2xl p-10">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">おすすめの読み方</h2>
-                <p className="text-gray-200 leading-relaxed mb-8">
+                <p className="text-ink/70 leading-relaxed mb-8">
                   「なぜAIがうまく動かないのか？」の分析 → 「似たカード探索」→「メタタグDB」の順で追うと、
                   仕組み全体の狙いが最短で理解できます。
                 </p>
@@ -190,13 +190,13 @@ export default function CardSearchArticlePage() {
                     href={NOTE_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300"
+                    className="btn-primary text-lg"
                   >
                     noteで記事を開く
                   </a>
                   <Link
                     href="/"
-                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-300"
+                    className="btn-secondary text-lg"
                   >
                     トップへ戻る
                   </Link>

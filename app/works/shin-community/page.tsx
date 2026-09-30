@@ -53,11 +53,11 @@ export default function ShinCommunityPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-black text-white py-4">
+      <div className="bg-cream border-b border-orange-100 py-4">
         <div className="container-custom">
           <Link 
             href="/" 
-            className="inline-flex items-center text-gray-300 hover:text-white transition-colors"
+            className="inline-flex items-center text-ink/70 hover:text-sun transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             ホームに戻る
@@ -314,7 +314,7 @@ export default function ShinCommunityPage() {
       </section>
 
       {/* CTA Section
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-sky-50 text-ink">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -326,14 +326,14 @@ export default function ShinCommunityPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               コンテンツ制作・マーケティング支援
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-ink/70 mb-8 max-w-2xl mx-auto">
               10年以上のコンテンツ制作経験と商業出版実績を活かした
               マーケティング支援、執筆・編集業務のご相談を承ります
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
+                className="btn-primary text-lg"
               >
                 コンテンツ制作を相談する
               </Link>
