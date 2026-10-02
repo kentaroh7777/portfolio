@@ -15,7 +15,7 @@ const works = [
     id: "cnp-traca",
     title: "CNPトレカアプリ開発",
     description: "初心者でも気軽にCNPトレカを楽しめるWebアプリ。ネットワーク対戦とCPU対戦機能を実装。",
-    image: "/cnp-traca-banner.jpeg",
+    image: "/cnp-tcg-banner.png",
     stats: {
       reposts: 115,
       likes: 190,
