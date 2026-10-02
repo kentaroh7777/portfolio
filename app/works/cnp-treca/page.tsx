@@ -128,7 +128,7 @@ export default function CNPTrecaPage() {
             className="relative overflow-hidden rounded-2xl shadow-2xl"
           >
             <Image
-              src="/cnp-tcg-banner.png"
+              src="/banners/cnp-tcg-ogp.webp"
               alt="CNPトレカアプリのスクリーンショット"
               width={1200}
               height={600}

@@ -66,7 +66,7 @@ export default function MCPEmailServerPage() {
       <section className="py-16">
         <div className="container-custom">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative overflow-hidden rounded-2xl shadow-2xl">
-            <Image src="/mcp-email-banner2.png" alt="MCP Email Server" width={1200} height={600} className="w-full h-auto" />
+            <Image src="/banners/mcp-email-2026.webp" alt="MCP Email Server" width={1200} height={600} className="w-full h-auto" />
           </motion.div>
         </div>
       </section>

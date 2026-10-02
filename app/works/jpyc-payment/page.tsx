@@ -113,7 +113,7 @@ export default function JpycPaymentPage() {
             {/* Placeholder for actual image */}
             <div className="text-gray-500 text-lg">
               <Image
-                src="/jpyc-payment-banner.png"
+                src="/banners/jpyc-payment-2026.webp"
                 alt="JPYC決済アプリ"
                 width={1200}
                 height={630}

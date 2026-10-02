@@ -72,7 +72,7 @@ export default function CardSearchArticlePage() {
             <div className="max-w-5xl mx-auto">
               <figure className="relative overflow-hidden rounded-2xl shadow-2xl bg-gray-50">
                 <Image
-                  src="/card-search.png"
+                  src="/banners/card-search-2026.webp"
                   alt="AIとメタタグでカード効果ロジックを自動設計（card-search）"
                   width={1600}
                   height={800}

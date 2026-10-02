@@ -10,7 +10,7 @@ const allWorks = [
     id: "cnp-treca",
     title: "CNPトレカアプリ開発",
     description: "初心者でも気軽にCNPトレカを楽しめるWebアプリ。ネットワーク対戦とCPU対戦機能を実装。リアルカードゲームのオンライン化の可能性を検証した本格的なゲームアプリケーション。",
-    image: "/cnp-tcg-banner.png",
+    image: "/banners/cnp-tcg-ogp.webp",
     period: "2024年9月〜2025年5月",
     stats: {
       development: "10人月",
@@ -27,7 +27,7 @@ const allWorks = [
     title: "AI駆動 爆速開発手法（card-search / メタタグDB）",
     description:
       "CNPトレカの「カード効果ロジック」を高速・高品質に実装するための開発手法。類似カード検索CLI（card-search）と実装パターンのメタタグDBで、AIエージェントの認知負荷を下げて設計・実装を加速。",
-    image: "/card-search.png",
+    image: "/banners/card-search-2026.webp",
     period: "2026年1月",
     stats: {
       approach: "card-search + メタタグDB",
@@ -42,7 +42,7 @@ const allWorks = [
     id: "shin-community",
     title: "シン・コミュニティマーケティング",
     description: "Web3時代のコミュニティを活用したマーケティングの仕組みと事例を解説した商業出版。企業のマーケティング担当者向けに実践的なノウハウを提供し、3.5日で3,000部完売の好評を博した。",
-    image: "/shin-community-book.jpg",
+    image: "/banners/shin-community-2026.webp",
     period: "2024年12月出版",
     stats: {
       sales: "3,000部",
@@ -57,7 +57,7 @@ const allWorks = [
     id: "ai-reply-assistant",
     title: "AI Reply Assistant Chrome拡張",
     description: "最高評価を獲得したChrome拡張機能。Gmail、Discord、LINEなど複数のコミュニケーションプラットフォームを統一的に管理し、AIを活用した効率的な返信支援ツールを実現。",
-    image: "/ranking-first.png",
+    image: "/banners/ai-reply-2026.webp",
     period: "AX camp 開発期間",
     stats: {
       evaluation: "最高評価",
@@ -75,7 +75,7 @@ const allWorks = [
     id: "mcp-todoist",
     title: "MCP Todoist サーバー",
     description: "標準入出力(stdio)型のMCPサーバー。Convexベースでセッション管理・リアルタイム・ツール実行を統合。TDDで多数テストを整備。",
-    image: "/mcp-todoist-banner.png",
+    image: "/banners/mcp-todoist-2026.webp",
     period: "2025年1月-6月",
     stats: {
       tests: "100+",
@@ -91,7 +91,7 @@ const allWorks = [
     id: "mcp-email-server",
     title: "MCP Email サーバー",
     description: "ストリーミングHTTP型のMCPサーバー。Gmail/IMAP統合、送信・検索・アーカイブなどのツールを提供し、全テスト合格。",
-    image: "/mcp-email-banner2.png",
+    image: "/banners/mcp-email-2026.webp",
     period: "2025年6月",
     stats: {
       tests: "100% pass",
@@ -107,7 +107,7 @@ const allWorks = [
     id: "jpyc-payment",
     title: "JPYC決済アプリ導入実験成功",
     description: "KryptoKyoto様と共同で実施したJPYC決済導入実験に成功しました。店舗スタッフもお客様も迷わずに操作できる専用決済アプリを開発し、スムーズな暗号資産決済を実現。",
-    image: "/jpyc-payment-banner.png",
+    image: "/banners/jpyc-payment-2026.webp",
     period: "2025年11月〜",
     stats: {
       role: "アプリ開発",
@@ -179,13 +179,14 @@ export default function WorksPage() {
               >
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   {/* Image Section */}
-                  <div className={`relative ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <div className="aspect-[4/3] lg:aspect-auto lg:h-full relative overflow-hidden">
+                  <div className={`relative bg-cream lg:flex lg:items-center ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                    {/* バナーは3:2で作る。枠を3:2に固定し、比率の違う画像（CNPのOGPなど）も切らずに全体を見せる */}
+                    <div className="aspect-[3/2] w-full relative overflow-hidden">
                       <Image
                         src={work.image}
                         alt={work.title}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                       />
                       {work.badge && (
                         <div className="absolute top-4 left-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
